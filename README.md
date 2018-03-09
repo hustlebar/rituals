@@ -1,6 +1,6 @@
 # rituals
 
-A new flutter package project.
+Simple customized widget library for any Flutter project
 
 ## Getting Started
 
