@@ -3,11 +3,13 @@ import 'package:flutter/material.dart';
 class RitualsText extends StatelessWidget {
   RitualsText(this.text, {
     Key key,
-    this.size
+    this.size,
+    this.color
   }) : super(key: key);
 
   final String text;
   final RitualsTextSize size;
+  final Color color;
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +24,8 @@ class RitualsText extends StatelessWidget {
 
   TextStyle _style() {
     return new TextStyle(
-      fontSize: _size()
+      fontSize: _size(),
+      color: color,
     );
   }
 
