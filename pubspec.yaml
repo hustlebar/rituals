@@ -1,8 +1,11 @@
 name: rituals
 description: A simple widgets library for Flutter project
 version: 0.0.1
-author: Tham
+author: Tham <zarub2k@gmail.com>
 homepage: https://github.com/zarub2k
+
+environment:
+  sdk: '>=1.20.1 <2.0.0'
 
 dependencies:
   flutter:

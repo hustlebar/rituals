@@ -4,6 +4,4 @@ Simple customized widget library for any Flutter project
 
 ## Getting Started
 
-For help getting started with Flutter, view our online [documentation](https://flutter.io/).
-
-For help on editing package code, view the [documentation](https://flutter.io/developing-packages/).
+This is in early stage. DO NOT USE.
