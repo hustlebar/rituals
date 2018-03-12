@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:rituals/src/linear/rituals_text.dart';
 
 class RitualsButton extends StatelessWidget {
-  RitualsButton(this.text, this.onPressed);
+  RitualsButton(this.text, {this.onPressed});
 
   final String text;
   final VoidCallback onPressed;
