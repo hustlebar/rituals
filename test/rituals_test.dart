@@ -1,7 +1,5 @@
 import 'package:test/test.dart';
 
-import 'package:rituals/rituals.dart';
-
 void main() {
   test('adds one to input values', () {
 //    final calculator = new Calculator();
