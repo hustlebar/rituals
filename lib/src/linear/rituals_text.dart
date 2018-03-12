@@ -31,22 +31,22 @@ class RitualsText extends StatelessWidget {
 
   double _size() {
     if (RitualsTextSize.small == size) {
-      return 15.0;
-    }
-
-    if (RitualsTextSize.medium == size) {
       return 20.0;
     }
 
-    if (RitualsTextSize.large == size) {
+    if (RitualsTextSize.medium == size) {
       return 25.0;
     }
 
-    if (RitualsTextSize.xlarge == size) {
+    if (RitualsTextSize.large == size) {
       return 30.0;
     }
 
-    return 10.0;
+    if (RitualsTextSize.xlarge == size) {
+      return 35.0;
+    }
+
+    return 15.0;
   }
 }
 
