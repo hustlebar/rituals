@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:rituals/src/linear/rituals_text.dart';
 
 class RitualsField extends StatelessWidget {
-  RitualsField(this.title);
-  final String title;
+  RitualsField({
+    this.isSecret,
+    this.placeholder
+  });
+
+  final bool isSecret;
+  final String placeholder;
 
   final TextEditingController _controller = new TextEditingController();
 
@@ -12,19 +16,14 @@ class RitualsField extends StatelessWidget {
     return _buildUi(context);
   }
 
-  Column _buildUi(BuildContext context) {
-    return new Column(
-      children: <Widget>[
-        new RitualsText(title, size: RitualsTextSize.medium,),
-        
-        _buildTextField()
-      ],
-    );
-  }
-
-  TextField _buildTextField() {
+  TextField _buildUi(BuildContext context) {
     return new TextField(
       controller: _controller,
+
+      obscureText: (isSecret == null) ? false : isSecret,
+      decoration: new InputDecoration(
+        helperText: placeholder
+      ),
     );
   }
 }

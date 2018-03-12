@@ -4,12 +4,14 @@ class RitualsText extends StatelessWidget {
   RitualsText(this.text, {
     Key key,
     this.size,
-    this.color
+    this.color,
+    this.align
   }) : super(key: key);
 
   final String text;
   final RitualsTextSize size;
   final Color color;
+  final TextAlign align;
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +21,12 @@ class RitualsText extends StatelessWidget {
   Text _buildUi() {
     return new Text(text,
       style: _style(),
+      textAlign: _align(),
     );
+  }
+
+  TextAlign _align() {
+    return (align == null) ? TextAlign.center : align;
   }
 
   TextStyle _style() {
