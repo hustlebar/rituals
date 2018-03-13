@@ -22,7 +22,7 @@ class RitualsField extends StatelessWidget {
 
       obscureText: (isSecret == null) ? false : isSecret,
       decoration: new InputDecoration(
-        helperText: placeholder
+        hintText: placeholder
       ),
     );
   }
