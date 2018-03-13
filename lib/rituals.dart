@@ -5,6 +5,7 @@ export 'package:rituals/src/linear/rituals_button.dart';
 export 'package:rituals/src/linear/rituals_icon.dart';
 export 'package:rituals/src/linear/rituals_field.dart';
 export 'package:rituals/src/linear/rituals_password.dart';
+export 'package:rituals/src/linear/rituals_icon_button.dart';
 /// A Calculator.
 //class Calculator {
 //  /// Returns [value] plus 1.
