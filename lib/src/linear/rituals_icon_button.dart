@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 
 class RitualsIconButton extends StatelessWidget {
-  RitualsIconButton(this.iconData, this.onPressed);
+  RitualsIconButton({ 
+    @required this.iconData, 
+    this.onPressed 
+  });
   final IconData iconData;
   final VoidCallback onPressed;
 
