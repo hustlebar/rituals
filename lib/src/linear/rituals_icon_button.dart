@@ -5,6 +5,7 @@ class RitualsIconButton extends StatelessWidget {
     this.iconData, 
     this.onPressed 
   });
+  
   final IconData iconData;
   final VoidCallback onPressed;
 
